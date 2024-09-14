@@ -23,6 +23,7 @@
       - May miss issues that only appear in a full application context
       - Requires extensive mocking, especially for Angular services and dependencies
   - **End-to-End Testing (`ng e2e`)**
+    - Note here that e2e in this context is specifically about `ng e2e` and not the wider meaning of end-to-end testing. The main difference is the application is rendered to a browser as a user would use it.  We will run these tests as part of CI. We will only mock the external dependencies like authentication and API calls.
     - Pros:
       - Tests the entire application flow
       - Catches integration issues
@@ -65,7 +66,7 @@
     - Prioritize testing critical and complex parts of the application.
     - Use end-to-end tests to cover broader application behavior.
 
-- **Pragmatic Unit Testing Guidelines for the front-end**
+- **Pragmatic Unit Testing Guidelines for the Front-End**
 
   - **When to Write Unit Tests:**
     - Complex Business Logic: Test components or services with complex logic.
@@ -97,10 +98,10 @@
       - Front-end tests should prioritize critical and complex UI logic.
       - Back-end tests should cover business logic and data integrity.
       - Avoid enforcing the same testing rules for both; tailor strategies to the specific needs of each layer.
-  - **Additional interesting thoughts,**
-    - [TDD, Where Did It All Go Wrong (Ian Cooper)](https://www.youtube.com/watch?v=EZ05e7EMOLM), Even though talks about TDD and not specificaly about Front End, the concepts are universal and is a fantastic talk. Highly recomended.
-    - [Kent C. Dodds – Write tests. Not too many. Mostly integration](https://www.youtube.com/watch?v=Fha2bVoC8SE&list=PLV5CVI1eNcJgNqzNwcs4UKrlJdhfDjshf&t=11s). Kent, is a very well known developer/educator mostly in the react world. He is also the creator of the Epic Web Stack.
-    - [Grug on Testing](https://grugbrain.dev/#grug-on-testing), If you are not familiar with this legendary website you should find a quite afternoon and read the whole thing. It is hilarious and worth the time just for the laughts you are going to have.
+  - **Additional Interesting Thoughts:**
+    - [TDD, Where Did It All Go Wrong (Ian Cooper)](https://www.youtube.com/watch?v=EZ05e7EMOLM): Even though this talk is about TDD and not specifically about the front end, the concepts are universal and it is a fantastic talk. Highly recommended.
+    - [Kent C. Dodds – Write tests. Not too many. Mostly integration](https://www.youtube.com/watch?v=Fha2bVoC8SE&list=PLV5CVI1eNcJgNqzNwcs4UKrlJdhfDjshf&t=11s): Kent is a very well-known developer/educator mostly in the React world. He is also the creator of the Epic Web Stack.
+    - [Grug on Testing](https://grugbrain.dev/#grug-on-testing): If you are not familiar with this legendary website, you should find a quiet afternoon and read the whole thing. It is hilarious and worth the time just for the laughs you are going to have.
 
 ## Pragmatic Unit Testing Guidelines in Angular
 
