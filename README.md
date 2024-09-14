@@ -65,7 +65,7 @@
     - Prioritize testing critical and complex parts of the application.
     - Use end-to-end tests to cover broader application behavior.
 
-- **Pragmatic Unit Testing Guidelines**
+- **Pragmatic Unit Testing Guidelines for the front-end**
 
   - **When to Write Unit Tests:**
     - Complex Business Logic: Test components or services with complex logic.
@@ -82,22 +82,25 @@
   - **Code Review Practices:**
     - Discuss the need for tests during code reviews.
     - Focus on the value of tests rather than enforcing strict rules.
-
-- **Front-End vs. Back-End Unit Testing**
-  - **Front-End Unit Testing:**
-    - Focuses on user interface components and interactions.
-    - Often requires mocking of services and dependencies.
-    - Tests may include DOM manipulation and rendering.
-    - More prone to changes due to evolving UI requirements.
-  - **Back-End Unit Testing:**
-    - Focuses on business logic, data processing, and APIs.
-    - Typically involves less mocking as dependencies are more stable.
-    - Tests are more stable and less likely to change frequently.
-    - Often easier to isolate logic without dealing with UI complexities.
-  - **Different Rules for Front-End and Back-End:**
-    - Front-end tests should prioritize critical and complex UI logic.
-    - Back-end tests should cover business logic and data integrity.
-    - Avoid enforcing the same testing rules for both; tailor strategies to the specific needs of each layer.
+  - **Front-End vs. Back-End Unit Testing**
+    - **Front-End Unit Testing:**
+      - Focuses on user interface components and interactions.
+      - Often requires mocking of services and dependencies.
+      - Tests may include DOM manipulation and rendering.
+      - More prone to changes due to evolving UI requirements.
+    - **Back-End Unit Testing:**
+      - Focuses on business logic, data processing, and APIs.
+      - Typically involves less mocking as dependencies are more stable.
+      - Tests are more stable and less likely to change frequently.
+      - Often easier to isolate logic without dealing with UI complexities.
+    - **Different Rules for Front-End and Back-End:**
+      - Front-end tests should prioritize critical and complex UI logic.
+      - Back-end tests should cover business logic and data integrity.
+      - Avoid enforcing the same testing rules for both; tailor strategies to the specific needs of each layer.
+  - **Additional interesting thoughts,**
+    - [TDD, Where Did It All Go Wrong (Ian Cooper)](https://www.youtube.com/watch?v=EZ05e7EMOLM), Even though talks about TDD and not specificaly about Front End, the concepts are universal and is a fantastic talk. Highly recomended.
+    - [Kent C. Dodds – Write tests. Not too many. Mostly integration](https://www.youtube.com/watch?v=Fha2bVoC8SE&list=PLV5CVI1eNcJgNqzNwcs4UKrlJdhfDjshf&t=11s). Kent, is a very well known developer/educator mostly in the react world. He is also the creator of the Epic Web Stack.
+    - [Grug on Testing](https://grugbrain.dev/#grug-on-testing), If you are not familiar with this legendary website you should find a quite afternoon and read the whole thing. It is hilarious and worth the time just for the laughts you are going to have.
 
 ## Pragmatic Unit Testing Guidelines in Angular
 
